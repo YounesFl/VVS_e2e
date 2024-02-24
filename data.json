@@ -1,0 +1,10 @@
+{
+    "tests": [
+        {
+            "name": "inscription",
+            "time": "53",
+            "status": "FAILED",
+            "message": null
+        }
+    ]
+}

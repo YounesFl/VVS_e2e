@@ -1,0 +1,135 @@
+appId: org.voisinsvigilants.voisinsvigilants.dev
+---
+- launchApp
+- assertVisible:
+    text: "connectez-vous"
+- assertVisible:
+    text: "Adresse e-mail"
+- assertVisible:
+    text: "mot de passe"
+- assertVisible:
+    text: "mot de passe oublié"
+- assertVisible:
+    text: "connexion"
+- assertVisible:
+    text: "Inscription"
+- tapOn:
+    text: "Inscription"
+- assertVisible:
+    text: "Inscrivez-vous"
+- assertVisible:
+    text: "Adresse e-mail"
+- assertVisible:
+    text: "mot de passe"
+- tapOn: "Adresse e-mail"
+- inputText:
+    text: "yyoooo@gmail.com"
+- tapOn: "Mot de passe"
+- inputText:
+    text: "Voisin123!"
+- tapOn:
+    point: "10%,54%"
+- tapOn: "OK"
+- tapOn:
+    point: "10%,59%"
+- tapOn: "Continuer"
+- assertVisible:
+    text: "vos informations"
+- assertVisible:
+    text: "prénom"
+- assertVisible:
+    text: "nom"
+- assertVisible:
+    text: "numéro de téléphone"
+- assertVisible:
+    text: "enregistrer"
+- assertVisible:
+    text: "déconnexion"
+- assertVisible:
+    text: "supprimer mon compte"
+# FRANCE
+- tapOn: "+33      "
+- tapOn: "Rechercher un pays"
+- inputText: "France"
+- tapOn: "France\n+33"
+- tapOn : "Numéro de téléphone"
+- inputText:
+    text: "760228059"
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "7 60 22 80 59"
+- eraseText: 14
+#saisir numéro de tél
+- inputText:
+    text: "139709510"
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "1 39 70 95 10"
+- eraseText: 14
+#BELGIQUE
+- tapOn: "+33      " # ici tu prends l'indicatif du précedent 
+- tapOn: "Rechercher un pays"
+- inputText: "Belgique"
+- tapOn: "Belgique\n+32"
+- tapOn: "Numéro de téléphone"
+- inputText:
+    text: "472123456"
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "472 12 34 56"
+- eraseText: 14
+- inputText:
+    text: "473987654" 
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "473 98 76 54"
+- eraseText: 14
+# GUYANE
+- tapOn: "+32      " # Commence avec l'indicatif de la Belgique pour réinitialiser
+- tapOn: "Rechercher un pays"
+- inputText: "Guyane"
+- tapOn: "Guyane française\n+594"
+- tapOn: "Numéro de téléphone"
+- inputText:
+    text: "694201234"
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "694 20 12 34"
+- eraseText: 14
+- inputText:
+    text: "694321098"
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "694 32 10 98"
+- eraseText: 14
+# POLYNÉSIE FRANÇAISE
+- tapOn: "+594   " # Commence avec l'indicatif de la Guyane pour réinitialiser
+- tapOn: "Rechercher un pays"
+- inputText: "poly"
+- tapOn: "Polynésie française\n+689"
+- tapOn: "Numéro de téléphone"
+- inputText:
+    text: "87123456" # Exemple de numéro en Polynésie française
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "87 12 34 56" # Préparation pour effacement
+- eraseText: 14
+# Saisir un nouveau numéro de téléphone
+- inputText:
+    text: "87234567" # Un autre exemple de numéro en Polynésie française
+- tapOn: "Enregistrer"
+- assertNotVisible:
+    text: "Numéro de téléphone invalide"
+- tapOn: "87 23 45 67" # Préparation pour effacement
+- eraseText: 14
+- tapOn: "OK"
+- tapOn: "supprimer mon compte"
+- tapOn: "supprimer mon compte"
+#

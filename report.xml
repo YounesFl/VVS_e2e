@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="R7AX10TASMR" tests="1" failures="1" time="22">
+    <testcase id="inscription" name="inscription" classname="inscription" time="22">
+      <failure>Assertion is false: "connectez-vous" is visible</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

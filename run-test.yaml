@@ -1,0 +1,4 @@
+appId: org.voisinsvigilants.voisinsvigilants.dev
+---
+- runFlow: "/Users/youneszaroual/Desktop/test/e2e/registration/inscription/inscription.yaml"
+- runFlow: "/Users/youneszaroual/Desktop/test/e2e/registration/Information/indicatif.yaml"

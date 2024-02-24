@@ -1,0 +1,37 @@
+appId: org.voisinsvigilants.voisinsvigilants.dev
+---
+- launchApp
+- tapOn: "Publier"
+- tapOn: "Cambriolage ou tentative"
+- tapOn: "Cambriolage"
+- tapOn: "Message"
+- inputText:
+    text: "Test automotion"
+- tapOn: "Publier"
+- tapOn: "Je souhaite confirmer l'envoi de mon alerte"
+- sleep: 5000
+- assertVisible:
+    text: "Cambriolage"
+- tapOn:
+    point: "50%,81%"
+- runFlow:
+    when:
+      visible: "Test automotion"
+    commands:
+      - tapOn:
+          point: "91%,13%"
+      - tapOn: "Suppression"
+
+
+# - runFlow:
+#     when:
+#       visible: "Nous avons besoin de quelques informations supplémentaires. Veillez à l'exactitude des données pour accélérer la vérification de votre compte."
+#     commands:
+#       - tapOn: "Prénom"
+#       - inputText:
+#           text: "test"
+#       - tapOn: "Nom"
+#       - inputText:
+#           text: "testé"
+# - inputText:
+#     text: "totorina@gmail.com"

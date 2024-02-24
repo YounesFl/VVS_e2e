@@ -1,0 +1,61 @@
+appId: org.voisinsvigilants.voisinsvigilants.dev
+---
+- launchApp
+- tag: "TEST_ONBOARDING_PUBLISH"
+  steps:
+    - tapOn: "Publier"
+- tag: "TEST_ONBOARDING_SUSPICIOUS_BEHAVIOR"
+  steps:
+    - tapOn: "comportement suspect"
+
+# - tapOn: "Continuer"
+# - tapOn: "Suivant"
+# - tapOn: "Suivant"
+# - tapOn: "me connecter"
+# - tapOn: "Autoriser"
+# - tapOn: "Inscription"
+# - tapOn: "Adresse e-mail"
+# - inputText:
+#     text: "totorina@gmail.com"
+# - tapOn: "Mot de passe"
+# - inputText:
+#     text: "Voisine123!"
+# - tapOn:
+#     point: "16%,37%"
+# - tapOn:
+#     point: "16%,41%"
+# - tapOn: "Continuer"
+# - runFlow:
+#     when:
+#       visible: "Nous avons besoin de quelques informations supplémentaires. Veillez à l'exactitude des données pour accélérer la vérification de votre compte."
+#     commands:
+#       - tapOn: "Prénom"
+#       - inputText:
+#           text: "test"
+#       - tapOn: "Nom"
+#       - inputText:
+#           text: "testé"
+# - tapOn: "Supprimer mon compte"
+# - tapOn: "Supprimer mon compte"
+
+
+
+
+# - tapOn: "UU"
+# - runFlow:
+#     when:
+#       visible: "communauté"
+#     commands:
+#       - tapOn: "communauté"
+# - tapOn:
+#     point: "6%,6%"
+# - runFlow:
+#     when:
+#       visible: "En attente de justificatif"
+#     commands:
+#       - tapOn: "ajouter mon document"
+# - tapOn: "Ajouter mon document"
+# - tapOn: "Ajouter une image ou un document\n3 mo max"
+# - tapOn:
+#     id: "com.google.android.documentsui:id/icon_thumb"
+# - tapOn: "Valider"

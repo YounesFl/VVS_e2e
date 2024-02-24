@@ -1,0 +1,17 @@
+{
+    "testExecutionKey": "VVS-474",
+    "info": {
+      "summary": "Importation automatique des résultats de test",
+      "description": "Résultats de test générés via script Node.js"
+    },
+    "tests": [
+      {
+        "testKey": "VVS-473",
+        "start": "2023-01-31T10:00:00Z",
+        "finish": "2023-01-31T10:14:00Z",
+        "comment": "Test d'onboarding réussi",
+        "status": "PASSED"
+      }
+    ]
+  }
+  

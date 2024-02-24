@@ -1,0 +1,75 @@
+appId: org.voisinsvigilants.voisinsvigilants.dev
+---
+- launchApp
+- assertVisible:
+    text: "connectez-vous"
+- assertVisible:
+    text: "Adresse e-mail"
+- assertVisible:
+    text: "mot de passe"
+- assertVisible:
+    text: "mot de passe oublié"
+- assertVisible:
+    text: "connexion"
+- assertVisible:
+    text: "Inscription"
+- tapOn:
+    text: "Inscription"
+- assertVisible:
+    text: "Inscrivez-vous"
+- assertVisible:
+    text: "Adresse e-mail"
+- assertVisible:
+    text: "mot de passe"
+- tapOn:
+    text: "Adresse e-mail"
+- inputText:
+    text: "yy@g.com"
+- tapOn:
+    text: "mot de passe"
+- inputText:
+    text: "Voisin123!"
+- tapOn:
+    point: "16%,35%"
+- tapOn:
+    point: "16%,39%"
+- tapOn:
+    text: "continuer"
+- assertVisible:
+    text: "vos informations"
+- assertVisible:
+    text: "prénom"
+- assertVisible:
+    text: "nom"
+- assertVisible:
+    text: "numéro de téléphone"
+- assertVisible:
+    text: "enregistrer"
+- assertVisible:
+    text: "déconnexion"
+- assertVisible:
+    text: "supprimer mon compte"
+- tapOn:
+    text: "supprimer mon compte"
+- assertVisible:
+    text: "Supprimer mon compte"
+- assertVisible:
+    text: "supprimer mon compte"
+- assertVisible:
+    text: "annuler"
+- tapOn:
+    text: "annuler"
+# Répéter les assertions de la feature 3
+- assertVisible:
+    text: "Supprimer mon compte"
+- tapOn:
+    text: "supprimer mon compte"
+- assertVisible:
+    text: "Supprimer mon compte"
+- assertVisible:
+    text: "supprimer mon compte"
+- assertVisible:
+    text: "annuler"
+- tapOn:
+    text: "supprimer mon compte"
+
