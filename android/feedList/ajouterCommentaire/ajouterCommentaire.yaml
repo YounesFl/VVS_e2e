@@ -13,7 +13,20 @@ appId: org.voisinsvigilants.voisinsvigilants.dev
     when:
       visible: "Test automotion"
       tapOn : "est automotion"
-
+      
+- launchApp
+- tapOn: "Publier"
+- tapOn: "Cambriolage ou tentative"
+- tapOn: "Cambriolage"
+- tapOn: "Message"
+- inputText:
+    text: "Test automotion"
+- tapOn: "Publier"
+- tapOn: "Je souhaite confirmer l'envoi de mon alerte"
+- runFlow:
+    when:
+      visible: "Test automotion"
+      tapOn : "est automotion"
 # - runFlow:
 #     when:
 #       visible: "Nous avons besoin de quelques informations supplémentaires. Veillez à l'exactitude des données pour accélérer la vérification de votre compte."
